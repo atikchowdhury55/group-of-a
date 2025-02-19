@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body class="bg-gray-300">
+
+    <!-- Sided navigation bar-->
+<div id="sidebar" class="sidebar bg-gray-700 text-white fixed top-0 left-0 h-full w-64 transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <ul class="p-5 space-y-4">
+        <li><a href="index.html"  class="block p-2 hover:bg-gray-500">HOMEPAGE</a></li>
+        
+        <li><a href="#" class="block p-2 hover:bg-gray-500">BOARD OF DIRECTORS</a></li>
+        <li><a href="#" class="block p-2 hover:bg-gray-500">SERVICE</a></li>
+        <li><a href="#" class="block p-2 hover:bg-gray-500">BUYING</a></li>
+        <li><a href="#" class="block p-2 hover:bg-gray-500">SELLING</a></li>
+        <li><a href="#" class="block p-2 hover:bg-gray-500">CAREERS</a></li>
+        <li><a href="#" class="block p-2 hover:bg-gray-500">CONTACT</a></li>
+        <li><a href="#" class="block p-2 hover:bg-gray-500">PRIVACY POLICY</a></li>
+        <li><a href="#" class="block p-2 hover:bg-gray-500">TERMS & CONDITIONS</a></li>
+    </ul>
+</div>
+
+    <button id="menuToggle" class="fixed top-5 left-5 bg-gray-800 text-white px-4 py-2 rounded">☰</button>
+
+    <!-- Main content -->
+    
+
+    <script>
+        function openNav() {
+            document.getElementById("sidebar").style.left = "0";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.left = "-250px";
+        }
+    </script>
+
+</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board of Directors</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #E5E4E2; /* Pewter color */
+            color: #333;
+        }
+        .member-card {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+        .name {
+            color: #2C3E50;
+            font-weight: bold;
+        }
+        .qualification strong {
+            color: #16A085;
+        }
+    </style>
+</head>
+<body class="p-6">
+    <header class="text-center mb-10">
+        <h1 class="text-4xl font-bold text-gray-800">Board of Directors</h1>
+    </header>
+
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Chairman -->
+        <div class="member-card p-6">
+            <h2 class="text-2xl font-bold mb-4"><strong>CHAIRMAN</strong></h2>
+            <p class="name text-xl mb-2">👤 ATIK CHOWDHURY</p>
+            <h3 class="text-lg font-semibold mb-2">Educational Qualifications:</h3>
+            <ul class="qualification list-disc list-inside">
+                <li><strong>Bachelor's Degree</strong> in Business Administration, Economics</li>
+                <li><strong>Master's Degree (MBA)</strong> in Business Administration, Management</li>
+                <li><strong>Ph.D.</strong> in Management</li>
+            </ul>
+        </div>
+
+        <!-- CEO -->
+        <div class="member-card p-6">
+            <h2 class="text-2xl font-bold mb-4"><strong>CEO - Chief Executive Officer</strong></h2>
+            <p class="name text-xl mb-2">👤 HASAN CHOWDHURY</p>
+            <h3 class="text-lg font-semibold mb-2">Educational Qualifications:</h3>
+            <ul class="qualification list-disc list-inside">
+                <li><strong>Bachelor's Degree</strong> in Business Administration, Economics</li>
+                <li><strong>Master's Degree (MBA)</strong> in Business, Management and Leadership</li>
+                <li><strong>Additional Specialized Certifications and courses</strong> in Leadership, Corporate Governance</li>
+                <li><strong>Ph.D.</strong> in Management, Economics</li>
+            </ul>
+        </div>
+
+        <!-- CFO -->
+        <div class="member-card p-6">
+            <h2 class="text-2xl font-bold mb-4"><strong>CFO - Chief Financial Officer</strong></h2>
+            <p class="name text-xl mb-2">👤 KEVIN SINTO</p>
+            <h3 class="text-lg font-semibold mb-2">Educational Qualifications:</h3>
+            <ul class="qualification list-disc list-inside">
+                <li><strong>Bachelor's Degree</strong> in Finance, Accounting, Economics, Business Administration</li>
+                <li><strong>Master's Degree (MBA)</strong> in Business Administration, Management</li>
+                <li><strong>Professional Certifications:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>CPA (Certified Public Accountant)</li>
+                        <li>CFA (Chartered Financial Analyst)</li>
+                        <li>CMA (Certified Management Accountant)</li>
+                    </ul>
+                </li>
+                <li><strong>Ph.D.</strong> in Management, Economics</li>
+            </ul>
+        </div>
+
+        <!-- COO -->
+        <div class="member-card p-6">
+            <h2 class="text-2xl font-bold mb-4"><strong>COO - Chief Operating Officer</strong></h2>
+            <p class="name text-xl mb-2">👤 SAHARIYAR KABIR SNIGDHO</p>
+            <h3 class="text-lg font-semibold mb-2">Educational Qualifications:</h3>
+            <ul class="qualification list-disc list-inside">
+                <li><strong>Bachelor's Degree</strong> in Operations Management, Industrial Engineering</li>
+                <li><strong>Master's Degree (MBA)</strong> in Business Administration, Operations, Strategic Management</li>
+                <li><strong>Specialized Certifications:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Certified Operations Manager (COM)</li>
+                        <li>Lean Six Sigma Certification</li>
+                        <li>Project Management Professional (PMP)</li>
+                    </ul>
+                </li>
+                <li><strong>Ph.D.</strong> in Business Management or Organizational Leadership</li>
+            </ul>
+        </div>
+
+        <!-- CTO -->
+        <div class="member-card p-6">
+            <h2 class="text-2xl font-bold mb-4"><strong>CTO - Chief Technology Officer</strong></h2>
+            <p class="name text-xl mb-2">👤 JERIN TASNIM ESHIKA</p>
+            <h3 class="text-lg font-semibold mb-2">Educational Qualifications:</h3>
+            <ul class="qualification list-disc list-inside">
+                <li><strong>Bachelor's Degree</strong> in Computer Science, Information Technology, Software Engineering, Electrical Engineering</li>
+                <li><strong>Master's Degree (MBA or M.Tech/MSc)</strong> in Technology Management, IT</li>
+                <li><strong>Specialized Certifications:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Certified Information Systems Security Professional (CISSP)</li>
+                        <li>Certified Scrum Master (CSM)</li>
+                        <li>AWS Certified Solutions Architect</li>
+                        <li>Google Professional Cloud Architect</li>
+                    </ul>
+                </li>
+                <li><strong>Ph.D.</strong> in Computer Science, Artificial Intelligence</li>
+            </ul>
+        </div>
+
+        <!-- CPO -->
+        <div class="member-card p-6">
+            <h2 class="text-2xl font-bold mb-4"><strong>CPO - Chief Product Officer</strong></h2>
+            <p class="name text-xl mb-2">👤 MALIYAT RAHAMAN MEDHA</p>
+            <h3 class="text-lg font-semibold mb-2">Educational Qualifications:</h3>
+            <ul class="qualification list-disc list-inside">
+                <li><strong>Bachelor's Degree</strong> in Business Administration, Marketing, Product Management, Computer Science, Engineering</li>
+                <li><strong>Master's Degree (MBA or MSc)</strong> in Product Management, Business Strategy, Marketing, and Technology Management</li>
+                <li><strong>Specialized Certifications:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Certified Scrum Product Owner (CSPO)</li>
+                        <li>Pragmatic Institute Product Management Certification</li>
+                        <li>Google Product Management Certification</li>
+                        <li>Certified Innovation Leader (CIL)</li>
+                    </ul>
+                </li>
+                <li><strong>Ph.D.</strong> in Business, Consumer Behavior and Product Innovation</li>
+            </ul>
+        </div>
+
+        <!-- CMO -->
+        <div class="member-card p-6">
+            <h2 class="text-2xl font-bold mb-4"><strong>CMO - Chief Marketing Officer</strong></h2>
+            <p class="name text-xl mb-2">👤 VALENTINA KRAENZLEIN</p>
+            <h3 class="text-lg font-semibold mb-2">Educational Qualifications:</h3>
+            <ul class="qualification list-disc list-inside">
+                <li><strong>Bachelor's Degree</strong> in Marketing, Business Administration, Communications, Advertising</li>
+                <li><strong>Master's Degree (MBA)</strong> in Marketing, Digital Marketing, Business Strategy, and Brand Management</li>
+                <li><strong>Specialized Certifications:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>Google Digital Marketing & E-commerce Certification</li>
+                        <li>HubSpot Content Marketing Certification</li>
+                        <li>Facebook (Meta) Blueprint Certification</li>
+                        <li>Chartered Institute of Marketing (CIM) Certification</li>
+                        <li>Certified Brand Strategist (CBS)</li>
+                    </ul>
+                </li>
+                <li><strong>Ph.D.</strong> in Consumer Behavior, Marketing Analytics and Business Strategy</li>
+            </ul>
+        </div>
+
+        <!-- CHRO -->
+        <div class="member-card p-6">
+            <h2 class="text-2xl font-bold mb-4"><strong>CHRO - Chief Human Resource Officer</strong></h2>
+            <p class="name text-xl mb-2">👤 DR. SIROTIR FIN</p>
+            <h3 class="text-lg font-semibold mb-2">Educational Qualifications:</h3>
+            <ul class="qualification list-disc list-inside">
+                <li><strong>Bachelor's Degree</strong> in Human Resources, Business Administration, Psychology, Organizational Development</li>
+                <li><strong>Master's Degree (MBA or MSc)</strong> in Human Resource Management, Organizational Leadership and Business Strategy</li>
+                <li><strong>Specialized Certifications:</strong>
+                    <ul class="list-disc list-inside ml-4">
+                        <li>SHRM-SCP (Society for Human Resource Management - Senior Certified Professional)</li>
+                        <li>PHR/SPHR (Professional in Human Resources / Senior Professional in Human Resources)</li>
+                        <li>CIPD (Chartered Institute of Personnel and Development) Certification</li>
+                        <li>Certified Talent Management Practitioner (CTMP)</li>
+                    </ul>
+                </li>
+                <li><strong>Ph.D.</strong> in Organizational Psychology, Human Resources</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
