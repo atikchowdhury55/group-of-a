@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.board-members {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.member {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.member h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.member .name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.member h3 {
+    color: #34495e;
+    margin-top: 15px;
+}
+
+.member ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.member ul li {
+    margin-bottom: 10px;
+}
+
+.member ul li strong {
+    color: #16a085;
+}
