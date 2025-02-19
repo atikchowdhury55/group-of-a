@@ -1,0 +1,58 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #B7B7B7; /* Pewter Color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background: #37474F; /* Dark Cool Grey */
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 12px 20px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background: #546E7A; /* Lighter Grey */
+    padding-left: 10px;
+}
+
+/* Slide-in Menu Button */
+#menuToggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #263238; /* Dark Grey */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
