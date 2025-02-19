@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #E5E4E2; /* Pewter color */
+            color: #333;
+        }
+        .cool-grey-card {
+            background-color: #F0F0F0; /* Cool Grey */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .cool-grey-card:hover {
+            transform: translateY(-5px);
+        }
+        .blue-text {
+            color: #1E90FF; /* Dodger Blue */
+        }
+        .slide-in-menu {
+            position: fixed;
+            top: 0;
+            left: -250px;
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            transition: left 0.3s ease;
+        }
+        .slide-in-menu.active {
+            left: 0;
+        }
+    </style>
+</head>
+<body class="p-6">
+    <!-- Slide-in Menu -->
+    <div class="slide-in-menu" id="menu">
+        <button class="absolute top-4 right-4 text-white" onclick="toggleMenu()">✕</button>
+        <ul class="p-4">
+            <li class="mb-2"><a href="html.index" class="block p-2 hover:bg-gray-800-500">Home</a></li>
+            <li class="mb-2"><a href="board-of-directors.html" class="text-white">Board of Directors</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Services</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Buying</a></li>
+            <li class="mb-2"><a href="#" class="text-white">Selling</a></li>
+      
+            <li class="mb-2"><a href="#" class="text-white">Careers</a></li>
+ 
+ <li class="mb-2"><a href="#" class="text-white">contact</a></li>
+ 
+    <li class="mb-2"><a href="#" class="text-white">Privacy Policicy</a></li>
+    
+     <li class="mb-2"><a href="#" class="text-white">Terms & Condition</a></li>
+
+
+            
+            </ul>
+    </div>
+
+    <!-- Menu Button -->
+    <button class="p-2 bg-gray-800 text-white rounded" onclick="toggleMenu()">☰ Menu</button>
+
+    <!-- Header -->
+    <header class="text-center my-10">
+        <h1 class="text-4xl font-bold text-gray-800">Welcome to Our Company!</h1>
+        <p class="mt-4 text-lg">We are delighted to have you here. Below are some of the key services we offer. For more services and personalized assistance, feel free to contact us.</p>
+    </header>
+
+    <!-- Services Section -->
+    <div class="container mx-auto">
+        <!-- Luxury Car Sales -->
+        <div class="cool-grey-card p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-4"><strong>Luxury Car Sales at Affordable Prices</strong></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div>
+                    <img src="https://i.imgur.com/ZJhURRe.jpg" alt="BMW M3" class="rounded-lg">
+                    <p class="mt-2"><strong>Model:</strong> BMW M3</p>
+                    <p><strong>Manufacturer:</strong> BMW</p>
+                    <p><strong>Type:</strong> Sports Sedan</p>
+                    <p><strong>Engine:</strong> 3.0L I6 Turbocharged</p>
+                    <p><strong>Power:</strong> 473 hp</p>
+                </div>
+                <div>
+                    <img src="https://i.imgur.com/p7QcvXn.jpg" alt="Luxury Car" class="rounded-lg">
+                </div>
+
+                <div>
+                    <img src="https://i.imgur.com/syj7Oou.jpg" alt="Luxury Car" class="rounded-lg">
+                </div>
+                
+                
+                <div>
+                    <img src="https://i.imgur.com/61ErnST.jpg" alt="Luxury Car" class="rounded-lg">
+                </div>
+                
+                  
+                <div>
+                    <img src="https://i.imgur.com/syj7Oou.jpg" alt="Luxury Car" class="rounded-lg">
+                </div>
+                
+<div>
+                    <img src="https://i.imgur.com/Re33dao.jpg" alt="Luxury Car" class="rounded-lg">
+                </div>
+                
+
+
+            </div>
+            <p class="mt-4">We offer premium luxury cars, including BMW, Rolls-Royce, Lamborghini, and Mercedes, at competitive prices, making luxury accessible to everyone.</p>
+        </div>
+
+        <!-- Import & Retail -->
+        <div class="cool-grey-card p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-4"><strong>Import & Retail of International Products</strong></h2>
+            <p>We import high-quality products from around the world and sell them at fair prices, ensuring affordability and accessibility for our customers.</p>
+        </div>
+
+        <!-- Loan Services -->
+        <div class="cool-grey-card p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-4"><strong>Business & Personal Loan Services</strong></h2>
+            <p>We provide business and personal loans with low-interest rates (0.5%), supporting entrepreneurs and individuals in financial growth.</p>
+            <ul class="list-disc list-inside mt-2">
+                <li><strong>Minimum Loan Amount:</strong> $1,000</li>
+                <li><strong>Maximum Loan Amount:</strong> $100,000</li>
+                <li><strong>Easy & Flexible Repayment Plans</strong></li>
+            </ul>
+        </div>
+
+        <!-- Branch Network -->
+        <div class="cool-grey-card p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-4"><strong>Nationwide Branch Network</strong></h2>
+            <p>We have offices in every district of Bangladesh, making our services easily accessible to all. Whether it’s buying a luxury car, importing foreign goods, or applying for a loan, we ensure smooth and hassle-free service.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="text-center my-10">
+        <p class="blue-text text-lg">📞 Contact us today to explore more!</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
