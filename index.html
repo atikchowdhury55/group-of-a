@@ -221,6 +221,11 @@
     <hr class="my-4">
   </div>
 <style>
+
+ .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
 .parallax {
     background-attachment: fixed;
     background-position: center;
@@ -233,6 +238,7 @@
     color: white;
     text-align: center;
 }
+
   /* Card Styling */
   .card {
     background-color: white;
@@ -255,7 +261,8 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .modal-content {
+  .modal-content 
+  {
     background-color: white;
     margin: 15% auto;
     padding: 20px;
@@ -323,6 +330,14 @@
   menuToggle.onclick = function() {
     slideMenu.style.transform = slideMenu.style.transform === 'translateX(0px)' ? 'translateX(-100%)' : 'translateX(0px)';
   }
+  // Parallax Effect
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+    const parallaxElements = document.querySelectorAll('.parallax');
+    parallaxElements.forEach(element => {
+        element.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+    });
+});
 </script>
 </body>
 </html>
