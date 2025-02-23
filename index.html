@@ -35,7 +35,7 @@
     <p style="color: #000000; font-family: 'Lora', serif; font-size: 17px;">
   🏢 Company History, Vision & Future</p>
 
-   <p style="color: #4B4F54; font-family: 'Lora', serif; font-size: 0.8em;">🏢 Company History, Vision & Future PlansCHOWDHURY OF A GROUP is a dynamic and innovative multinational corporation dedicated to excellence in various industries. Since its inception, we have been at the forefront of business development, technological advancements, and social responsibility, striving to create a better and more sustainable future<p></p>
+   <p style="color: #4B4F54; font-family: 'Lora', serif; font-size: 0.8em;">🏢 Company History, Vision & Future PlansCHOWDHURY OF A GROUP is a dynamic and innovative multinational corporation dedicated to excellence in various industries. Since its inception, we have been at the forefront of business development, technological advancements, and social responsibility, striving to create a better and more sustainable future</p>
 
 <p style="color: #000000; font-family: 'Lora', serif; font-size: 17px;">Our Vision & Mission</p>
 
@@ -371,9 +371,41 @@ footer p {
   .slide-menu a:hover {
     background-color: rgba(0, 0, 0, 0.9);
   }
+  .slide-menu {
+    background-color: black; /* Slide menu-এর background color black করুন */
+    color: white; /* টেক্সটের রং সাদা করুন */
+    padding-top: 60px;
+    position: fixed; /* Slide menu-এর position fixed রাখুন */
+    z-index: 1000; /* Slide menu-এর z-index সেট করুন যাতে এটি অন্য element-এর উপরে থাকে */
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+.slide-menu a {
+    color: white; /* লিংকের রং সাদা করুন */
+    text-decoration: none; /* আন্ডারলাইন সরান */
+    display: block; /* লিংকগুলিকে ব্লক হিসেবে দেখান */
+    padding: 10px 20px; /* লিংকের প্যাডিং সেট করুন */
+}
+
+.slide-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* হোভার এফেক্ট যোগ করুন */
+}
 </style>
 
 <script>
+
+
+
+const menuToggle = document.getElementById('menu-toggle');
+const slideMenu = document.getElementById('slide-menu');
+
+menuToggle.onclick = function() {
+    slideMenu.style.transform = slideMenu.style.transform === 'translateX(0px)' ? 'translateX(-100%)' : 'translateX(0px)';
+}
   // Modal functionality
   const modal = document.getElementById('modal');
   const closeModal = document.getElementById('close-modal');
@@ -399,17 +431,20 @@ footer p {
   const menuToggle = document.getElementById('menu-toggle');
   const slideMenu = document.getElementById('slide-menu');
 
-  menuToggle.onclick = function() {
-    slideMenu.style.transform = slideMenu.style.transform === 'translateX(0px)' ? 'translateX(-100%)' : 'translateX(0px)';
-  }
+  
+  
+
   // Parallax Effect
-window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function() {
     const scrollPosition = window.scrollY;
     const parallaxElements = document.querySelectorAll('.parallax');
     parallaxElements.forEach(element => {
-        element.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+      element.style.transform = `translateY(${scrollPosition * 0.5}px)`;
     });
-});
+  });
+
+
+
 </script>
 </body>
 </html>
