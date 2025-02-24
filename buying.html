@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOWDHURY OF A GROUP</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+    body {
+  font-family: 'Montserrat', sans-serif;
+}
+        /* Slide Menu Styles */
+        .slide-menu {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.9);
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+        .slide-menu.open {
+            transform: translateX(0);
+        }
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .cool-grey {
+            background-color: #8C92AC;
+        }
+        .pewter {
+            background-color: #E5E4E2;
+        }
+        /* Parallax Effect Styles */
+.parallax-text {
+    will-change: transform; /* Optimize for performance */
+    transition: transform 0.3s ease-out;
+}
+        
+    </style>
+</head>
+<body class="pewter">
+    <!-- Navigation Menu -->
+    <nav class="navbar fixed top-0 left-0 w-full z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="https://i.imgur.com/aoDQW6X.png" alt="Logo" class="h-12 w-auto">
+                <span class="text-xl font-bold text-gray-800 ml-2">CHOWDHURY OF A GROUP</span>
+            </div>
+            <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="text-gray-800 hover:text-blue-500">Home</a></li>
+                <li><a href="#board" class="text-gray-800 hover:text-blue-500">Board of Directors</a></li>
+                <li><a href="#services" class="text-gray-800 hover:text-blue-500">Services</a></li>
+                <li><a href="#careers" class="text-gray-800 hover:text-blue-500">Careers</a></li>
+                <li><a href="#contact" class="text-gray-800 hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Slide-in Menu -->
+    <div id="slide-menu" class="slide-menu fixed inset-y-0 left-0 w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class="p-6">
+                 <ul class="space-y-4">
+        <li><a href="index.html" class="block text-white hover:bg-gray-700 p-2 rounded">Home</a></li>
+        <li><a href="bordmembers.html" class="block text-white hover:bg-gray-700 p-2 rounded">Board of Directors</a></li>
+        <li><a href="service.html" class="block text-white hover:bg-gray-700 p-2 rounded">Services</a></li>
+        <li><a href="carearbost.html" class="block text-white hover:bg-gray-700 p-2 rounded">Careers</a></li>
+     
+            <li><a href="buying.html" class="block text-white hover:bg-gray-700 p-2 rounded">Buying</a></li>
+     
+           <li><a href="Selling.html" class="block text-white hover:bg-gray-700 p-2 rounded">Selling</a></li>
+              <li><a href="contact.html" class="block text-white hover:bg-gray-700 p-2 rounded">contact Us</a></li>
+                   <li><a href="privacy.html" class="block text-white hover:bg-gray-700 p-2 rounded">Privacy & Policy</a></li>
+        <li><a href="condition.html" class="block text-white hover:bg-gray-700 p-2 rounded">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-20 p-6">
+        <!-- Home Section -->
+<!-- Home Section -->
+<section id="home" class="mb-12 relative h-screen flex flex-col items-center justify-center overflow-hidden">
+    <h1 class="text-4xl font-bold text-gold-500 mb-4 parallax-text">Welcome to CHOWDHURY OF A GROUP</h1>
+    <p class="text-gray-700 parallax-text">Your trusted partner in business and innovation.</p>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <!-- Buying Section -->
+        <section id="buying" class="mt-8">
+            <h2 class="text-2xl font-bold">BUYING</h2>
+            <p class="mt-4"><strong>For Companies Interested in Partnership</strong></p>
+            <p class="mt-2">This is for those companies who wish to establish a partnership and do business with us. At CHOWDHURY OF A GROUP, we are always looking to expand our network and collaborate with businesses that share our vision for growth. We regularly purchase a variety of essential products to support our operations, including:</p>
+
+            <!-- Sales Offices -->
+            <div class="mt-6">
+                <h3 class="text-xl font-bold">Sales Offices</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/eZnFxaJ.jpg" alt="Sales Offices" class="w-full h-48 object-cover">
+                        <p class="mt-2">We regularly purchase the following high-tech and luxury items for our sales offices</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/0CNzcmm.jpg" alt="Satellite" class="w-full h-48 object-cover">
+                        <p class="mt-2">Single Engine Plane</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/qRTWQJQ.jpg" alt="Sub-Orbital Rocket" class="w-full h-48 object-cover">
+                        <p class="mt-2">Satellite</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/yv7n93o.jpg" alt="Luxury Jet" class="w-full h-48 object-cover">
+                        <p class="mt-2">Luxury Jet</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/liOOdhu.jpg" alt="Sub-Orbital Rocket" class="w-full h-48 object-cover">
+                        <p class="mt-2">Sub-Orbital Rocket</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/T8otgWV.jpg" alt="BFR (Big Falcon Rocket)" class="w-full h-48 object-cover">
+                        <p class="mt-2">BFR (Big Falcon Rocket)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- General Contractor -->
+            <div class="mt-6">
+                <h3 class="text-xl font-bold">General Contractor</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/nE7A7j4.jpg" alt="Diesel" class="w-full h-48 object-cover">
+                        <p class="mt-2">Diesel</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/lZtQoje.jpg" alt="Steel Beams" class="w-full h-48 object-cover">
+                        <p class="mt-2">Steel Beams</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/hJEAMlx.jpg" alt="Windows" class="w-full h-48 object-cover">
+                        <p class="mt-2">Windows</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/rNxggGK.jpg" alt="Tools" class="w-full h-48 object-cover">
+                        <p class="mt-2">Tools</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/WrY90h4.jpg" alt="Bulldozers" class="w-full h-48 object-cover">
+                        <p class="mt-2">Bulldozers</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dealership -->
+            <div class="mt-6">
+                <h3 class="text-xl font-bold">Dealership</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/RFmqtLo.jpg" alt="Economy E-cars" class="w-full h-48 object-cover">
+                        <p class="mt-2">Economy E-cars</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/OU5P8C5.jpg" alt="Economy Cars" class="w-full h-48 object-cover">
+                        <p class="mt-2">Economy Cars</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/juQOs0q.jpg" alt="Luxury E-cars" class="w-full h-48 object-cover">
+                        <p class="mt-2">Luxury E-cars</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/Jn61y1P.jpg" alt="Luxury Cars" class="w-full h-48 object-cover">
+                        <p class="mt-2">Luxury Cars</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/e3y9dcI.jpg" alt="Trucks" class="w-full h-48 object-cover">
+                        <p class="mt-2">Trucks</p>
+                    </div>
+                    <div class="cool-grey p-4 rounded-lg">
+                        <img src="https://i.imgur.com/ADRbptR.jpg" alt="Trucks" class="w-full h-48 object-cover">
+                        <p class="mt-2">Trucks</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="mt-6">
+                <p>If your company is interested in establishing a business partnership with us, we would be happy to hear from you. Contact us today, and let's explore how we can work together to achieve mutual success.</p>
+                <hr class="my-4">
+                <p>Chairman</p>
+                <p>Dr. ATIK CHOWDHURY</p>
+                <hr class="my-4">
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Function to toggle the slide menu
+        function toggleMenu() {
+            const slideMenu = document.getElementById('slide-menu');
+            slideMenu.classList.toggle('open');
+        }
+
+        // Add event listener to the menu-toggle button
+        document.getElementById('menu-toggle').addEventListener('click', toggleMenu);
+      
+    // GSAP Parallax Effect
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate the text elements
+    gsap.from('.parallax-text', {
+        y: 100, // Move text up by 100px initially
+        opacity: 0, // Start with transparent text
+        duration: 1, // Animation duration
+        scrollTrigger: {
+            trigger: '#home', // Trigger animation when #home section is in view
+            start: 'top center', // Start animation when top of #home reaches center of viewport
+            end: 'bottom center', // End animation when bottom of #home reaches center of viewport
+            scrub: true, // Smoothly animate on scroll
+        },
+    });
+
+    // Optional: Add a subtle parallax effect on scroll
+    document.addEventListener('scroll', () => {
+        const parallaxTexts = document.querySelectorAll('.parallax-text');
+        const scrollPosition = window.scrollY;
+
+        parallaxTexts.forEach(text => {
+            const offset = scrollPosition * 0.3; // Adjust the multiplier for intensity
+            text.style.transform = `translateY(${offset}px)`;
+        });
+    });
+    </script>
+</body>
+</html>

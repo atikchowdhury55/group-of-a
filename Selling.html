@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHOWDHURY OF A GROUP</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <style>
+    body {
+  font-family: 'Arial', font-family: 'Montserrat', sans-serif;
+}
+    
+    .slide-menu {
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+    .slide-menu.open {
+      transform: translateX(0);
+    }
+ .bg-pewter {
+  background-color: #8A9A5B; /* Pewter color (example hex code) */
+}
+
+.cool-grey {
+  background-color: #95A5A6; /* Cool grey color (example hex code) */
+}
+    .separator-line {
+      border-top: 2px solid #333;
+      margin: 20px 0;
+    }
+    .parallax {
+      background-image: url('');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-700" style="font-family: 'Montserrat', sans-serif;">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Navigation Menu -->
+  <nav class="navbar fixed top-0 left-0 w-full z-50 shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center">
+        <img src="https://i.imgur.com/aoDQW6X.png" alt="Logo" class="h-12 w-auto">
+        <span class="text-xl font-bold text-gray-800 ml-2">CHOWDHURY OF A GROUP</span>
+      </div>
+      <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-200" onclick="toggleMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#home" class="text-gray-800 hover:text-blue-500">Home</a></li>
+        <li><a href="#board" class="text-gray-800 hover:text-blue-500">Board of Directors</a></li>
+        <li><a href="#services" class="text-gray-800 hover:text-blue-500">Services</a></li>
+        <li><a href="#careers" class="text-gray-800 hover:text-blue-500">Careers</a></li>
+        <li><a href="#contact" class="text-gray-800 hover:text-blue-500">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Slide-in Menu -->
+  <div id="slide-menu" class="slide-menu fixed inset-y-0 left-0 w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+    <div class="p-6">
+      <button class="absolute top-0 right-0 p-4 text-white" onclick="toggleMenu()"></button>
+    <ul class="space-y-4">
+        <li><a href="index.html" class="block text-white hover:bg-gray-700 p-2 rounded">Home</a></li>
+        <li><a href="bordmembers.html" class="block text-white hover:bg-gray-700 p-2 rounded">Board of Directors</a></li>
+        <li><a href="service.html" class="block text-white hover:bg-gray-700 p-2 rounded">Services</a></li>
+        <li><a href="carearbost.html" class="block text-white hover:bg-gray-700 p-2 rounded">Careers</a></li>
+     
+            <li><a href="buying.html" class="block text-white hover:bg-gray-700 p-2 rounded">Buying</a></li>
+     
+           <li><a href="Selling.html" class="block text-white hover:bg-gray-700 p-2 rounded">Selling</a></li>
+              <li><a href="contact.html" class="block text-white hover:bg-gray-700 p-2 rounded">contact Us</a></li>
+                   <li><a href="privacy.html" class="block text-white hover:bg-gray-700 p-2 rounded">Privacy & Policy</a></li>
+        <li><a href="condition.html" class="block text-white hover:bg-gray-700 p-2 rounded">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container mx-auto p-4">
+    <!-- Menu Button -->
+    
+
+    <!-- Home Section -->
+    <section id="home" class="my-8">
+      <h1 class="text-4xl font-bold text-center">Welcome to CHOWDHURY OF A GROUP</h1>
+      <p class="text-center mt-4">Your trusted partner in construction and trading.</p>
+    </section>
+
+    <!-- Selling Section -->
+    <section id="selling" class="my-8">
+      <h2 class="text-3xl font-bold">SELLING</h2>
+      <div class="separator-line"></div>
+      <p class="mt-4">
+        At CHOWDHURY OF A GROUP, we specialize in selling a wide range of construction units and are recognized as one of the world's leading companies in this field. If any company, institution, private company, the Government of Bangladesh, or any international government is interested in purchasing construction materials or units from us, please get in touch with us immediately. We are committed to finalizing business deals quickly at affordable prices.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+        <!-- Card Layout -->
+        <div class="cool-grey p-4 rounded-lg shadow-lg">
+          <img src="https://i.imgur.com/vYKmSds.jpg" alt="Construction Unit" class="w-full h-48 object-cover rounded">
+          <h3 class="text-xl font-semibold mt-4">Construction Units</h3>
+          <p class="mt-2">High-quality construction units ready for sale.</p>
+        </div>
+      </div>
+      <div class="separator-line"></div>
+      <p class="mt-4">
+        Additionally, we import products from various countries worldwide, making them available at competitive prices for all companies in Bangladesh. For purchasing these items, it is essential to contact us directly.
+      </p>
+      <p class="mt-4">
+        We pride ourselves on selling all products at prices 3% lower than the market rate, ensuring great value for our customers. Our partner companies are continuously manufacturing thousands of construction units, which are ready for sale.
+      </p>
+      <div class="separator-line"></div>
+      <h3 class="text-2xl font-bold mt-4">Chairman</h3>
+      <p class="mt-2">Dr. ATIK CHOWDHURY</p>
+    </section>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Toggle Menu Function
+    function toggleMenu() {
+      const slideMenu = document.getElementById('slide-menu');
+      slideMenu.classList.toggle('open');
+    }
+
+    // Close Menu on Click Outside
+    document.addEventListener('click', (event) => {
+      const slideMenu = document.getElementById('slide-menu');
+      const menuToggle = document.getElementById('menu-toggle');
+      if (!slideMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+        slideMenu.classList.remove('open');
+      }
+    });
+    // Toggle Menu Function
+function toggleMenu() {
+  const slideMenu = document.getElementById('slide-menu');
+  slideMenu.classList.toggle('open');
+}
+
+// Close Menu on Click Outside
+document.addEventListener('click', (event) => {
+  const slideMenu = document.getElementById('slide-menu');
+  const menuToggle = document.getElementById('menu-toggle');
+  if (!slideMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+    slideMenu.classList.remove('open');
+  }
+});
+
+// Smooth Scroll for Anchor Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Parallax Effect (Optional)
+window.addEventListener('scroll', () => {
+  const parallax = document.querySelector('.parallax');
+  let scrollPosition = window.pageYOffset;
+  parallax.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+});
+    
+  </script>
+  <style>
+    /* Custom Styles */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.slide-menu {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-menu.open {
+  transform: translateX(0);
+}
+
+.bg-pewter {
+  background-color: #8A8A8A; /* Pewter color */
+}
+
+.cool-grey {
+  background-color: #95A5A6; /* Cool grey color */
+}
+
+.separator-line {
+  border-top: 2px solid #333;
+  margin: 20px 0;
+}
+
+.parallax {
+  background-image: url('https://i.imgur.com/vYKmSds.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar a {
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #3B82F6; /* Blue color */
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+  </style>
+</body>
+</html>

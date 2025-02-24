@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOWDHURY OF A GROUP</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .slide-menu {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #3498db;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation Menu -->
+    <nav class="navbar fixed top-0 left-0 w-full z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+  <img src="https://i.imgur.com/aoDQW6X.png" alt="Logo" class="h-12 w-auto">
+                <span class="text-xl font-bold text-gray-800 ml-2">CHOWDHURY OF A GROUP</span>
+            </div>
+            <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="text-gray-800 hover:text-blue-500">Home</a></li>
+                <li><a href="#board" class="text-gray-800 hover:text-blue-500">Board of Directors</a></li>
+                <li><a href="#services" class="text-gray-800 hover:text-blue-500">Services</a></li>
+                <li><a href="#careers" class="text-gray-800 hover:text-blue-500">Careers</a></li>
+                <li><a href="#contact" class="text-gray-800 hover:text-blue-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Slide-in Menu -->
+    <div id="slide-menu" class="slide-menu fixed inset-y-0 left-0 w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class="p-6">
+              <ul class="space-y-4">
+        <li><a href="index.html" class="block text-white hover:bg-gray-700 p-2 rounded">Home</a></li>
+        <li><a href="bordmembers.html" class="block text-white hover:bg-gray-700 p-2 rounded">Board of Directors</a></li>
+        <li><a href="service.html" class="block text-white hover:bg-gray-700 p-2 rounded">Services</a></li>
+        <li><a href="carearbost.html" class="block text-white hover:bg-gray-700 p-2 rounded">Careers</a></li>
+     
+            <li><a href="buying.html" class="block text-white hover:bg-gray-700 p-2 rounded">Buying</a></li>
+     
+           <li><a href="Selling.html" class="block text-white hover:bg-gray-700 p-2 rounded">Selling</a></li>
+              <li><a href="contact.html" class="block text-white hover:bg-gray-700 p-2 rounded">contact Us</a></li>
+                   <li><a href="privacy.html" class="block text-white hover:bg-gray-700 p-2 rounded">Privacy & Policy</a></li>
+        <li><a href="condition.html" class="block text-white hover:bg-gray-700 p-2 rounded">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-20 p-6">
+        <!-- Home Section -->
+        <section id="home" class="mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to CHOWDHURY OF A GROUP</h1>
+            <p class="text-gray-600">Your trusted partner in business and innovation.</p>
+        </section>
+
+        <!-- Career Opportunities Section -->
+        <section id="careers" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 section-title">Career Opportunities</h2>
+            <p class="text-gray-600 mb-6">Join our team and be part of a dynamic and innovative organization.</p>
+            <p class="text-gray-600 mb-6">We are constantly looking for talented and dedicated professionals to join our growing team. Below are the key roles we hire for across various departments</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Example Career Card -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Management & Administrative Roles</h3>
+                    <ul class="text-gray-600">
+                        <li>General Manager</li>
+                        <li>Operations Manager</li>
+                        <li>Business Development Manager</li>
+                        <li>Human Resources Manager</li>
+                        <li>Project Manager</li>
+                        <li>Legal Advisor</li>
+                        <li>Contract Manager</li>
+                        <li>Office Administrator</li>
+                  <li>Executive Assistant</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Sales & Marketing Roles</h3>
+    <ul class="text-gray-600">
+        <li>Sales Manager</li>
+        <li>Regional Sales Manager</li>
+        <li>Product Marketing Manager</li>
+        <li>Marketing Analyst</li>
+        <li>Brand Manager</li>
+        <li>Digital Marketing Specialist</li>
+        <li>Advertising Specialist</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Technical & Engineering Roles</h3>
+    <ul class="text-gray-600">
+        <li>Mechanical Engineer</li>
+        <li>Electrical Engineer</li>
+        <li>Civil Engineer</li>
+        <li>Construction Engineer</li>
+        <li>Field Engineer</li>
+        <li>Maintenance Engineer</li>
+        <li>Design Engineer</li>
+        <li>Manufacturing Technician</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Field & Operational Roles</h3>
+    <ul class="text-gray-600">
+        <li>Site Supervisor</li>
+        <li>Construction Foreman</li>
+        <li>Project Assistant</li>
+        <li>Field Technician</li>
+        <li>Heavy Equipment Operator</li>
+        <li>Inventory Controller</li>
+        <li>Safety Officer</li>
+        <li>Installation Technician</li>
+        <li>Laborer</li>
+        <li>Surveyor</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Finance & Accounting Roles</h3>
+    <ul class="text-gray-600">
+        <li>Accountant</li>
+        <li>Financial Analyst</li>
+        <li>Cost Accountant</li>
+        <li>Billing Specialist</li>
+        <li>Tax Specialist</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">IT & Support Roles</h3>
+    <ul class="text-gray-600">
+        <li>IT Support Specialist</li>
+        <li>Network Administrator</li>
+        <li>Software Developer</li>
+        <li>Database Administrator</li>
+        <li>System Analyst</li>
+        <li>Cybersecurity Specialist</li>
+        <li>Technical Support Specialist</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Customer Support & Service Roles</h3>
+    <ul class="text-gray-600">
+        <li>Customer Service Manager</li>
+        <li>Technical Support Engineer</li>
+        <li>Helpdesk Technician</li>
+        <li>Call Center Representative</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Production & Manufacturing Roles</h3>
+    <ul class="text-gray-600">
+        <li>Production Supervisor</li>
+        <li>Assembly Line Worker</li>
+        <li>Manufacturing Specialist</li>
+        <li>Quality Control Inspector</li>
+        <li>Production Planner</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Research & Development (R&D) Roles</h3>
+    <ul class="text-gray-600">
+        <li>Research Scientist</li>
+        <li>Product Development Manager</li>
+        <li>Innovation Specialist</li>
+        <li>Data Scientist</li>
+        <li>R&D Engineer</li>
+        <li>Laboratory Technician</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Supply Chain & Logistics Roles</h3>
+    <ul class="text-gray-600">
+        <li>Supply Chain Manager</li>
+        <li>Warehouse Manager</li>
+        <li>Procurement Specialist</li>
+        <li>Distribution Manager</li>
+        <li>Inventory Analyst</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Human Resources & Talent Management Roles</h3>
+    <ul class="text-gray-600">
+        <li>Talent Acquisition Specialist</li>
+        <li>Training and Development Manager</li>
+        <li>Organizational Development Specialist</li>
+        <li>Compensation and Benefits Analyst</li>
+        <li>HR Business Partner</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Corporate Strategy & Consulting Roles</h3>
+    <ul class="text-gray-600">
+        <li>Strategy Manager</li>
+        <li>Business Consultant</li>
+        <li>Corporate Planner</li>
+        <li>Risk Management Specialist</li>
+        <li>Corporate Social Responsibility (CSR) Manager</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Creative & Design Roles</h3>
+    <ul class="text-gray-600">
+        <li>Graphic Designer</li>
+        <li>UI/UX Designer</li>
+        <li>Creative Director</li>
+        <li>Content Writer/Copywriter</li>
+        <li>Video Editor</li>
+        <li>Multimedia Specialist</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Environmental & Sustainability Roles</h3>
+    <ul class="text-gray-600">
+        <li>Sustainability Manager</li>
+        <li>Environmental Engineer</li>
+        <li>Energy Efficiency Specialist</li>
+        <li>Waste Management Coordinator</li>
+        <li>Climate Change Analyst</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Health, Safety, & Environment (HSE) Roles</h3>
+    <ul class="text-gray-600">
+        <li>HSE Manager</li>
+        <li>Occupational Health Specialist</li>
+        <li>Safety Trainer</li>
+        <li>Environmental Health Officer</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Legal & Regulatory Roles</h3>
+    <ul class="text-gray-600">
+        <li>Corporate Lawyer</li>
+        <li>Intellectual Property Specialist</li>
+        <li>Regulatory Affairs Manager</li>
+        <li>Compliance Auditor</li>
+        <li>Contract Specialist</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Public Relations & Communications Roles</h3>
+    <ul class="text-gray-600">
+        <li>Public Relations Manager</li>
+        <li>Corporate Communications Specialist</li>
+        <li>Media Relations Officer</li>
+        <li>Internal Communications Manager</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">International Business & Trade Roles</h3>
+    <ul class="text-gray-600">
+        <li>International Business Manager</li>
+        <li>Export/Import Coordinator</li>
+        <li>Trade Compliance Specialist</li>
+        <li>Global Supply Chain Analyst</li>
+        <li>Foreign Market Analyst</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Education & Training Roles</h3>
+    <ul class="text-gray-600">
+        <li>Corporate Trainer</li>
+        <li>Learning and Development Specialist</li>
+        <li>Instructional Designer</li>
+        <li>Training Coordinator</li>
+        <li>E-Learning Developer</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Real Estate & Property Management Roles</h3>
+    <ul class="text-gray-600">
+        <li>Real Estate Manager</li>
+        <li>Property Development Manager</li>
+        <li>Facilities Manager</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Healthcare & Wellness Roles</h3>
+    <ul class="text-gray-600">
+        <li>Corporate Wellness Coordinator</li>
+        <li>Occupational Health Nurse</li>
+        <li>Health and Safety Trainer</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Innovation & Technology Roles</h3>
+    <ul class="text-gray-600">
+        <li>AI/ML Engineer</li>
+        <li>Blockchain Developer</li>
+        <li>IoT Specialist</li>
+        <li>Robotics Engineer</li>
+        <li>Innovation Manager</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Corporate Governance & Ethics Roles</h3>
+    <ul class="text-gray-600">
+        <li>Corporate Governance Officer</li>
+        <li>Ethics and Compliance Manager</li>
+        <li>Internal Auditor</li>
+        <li>Whistleblower Coordinator</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Event Management & Hospitality Roles</h3>
+    <ul class="text-gray-600">
+        <li>Event Manager</li>
+        <li>Conference Planner</li>
+    </ul>
+</div>
+
+<hr class="my-6 border-gray-300">
+
+<div class="bg-white p-6 rounded-lg shadow-md hover-scale">
+    <h3 class="text-xl font-bold text-gray-800 mb-2">Miscellaneous Roles</h3>
+    <ul class="text-gray-600">
+        <li>Data Entry Operator</li>
+        <li>Receptionist</li>
+        <li>Administrative Assistant</li>
+        <li>Fleet Manager</li>
+    </ul>
+</div>
+            </div>
+        </section>
+<p class="text-gray-600 mb-6">If you are passionate about building a successful career and contributing to a dynamic organization, we encourage you to explore these opportunities and apply. Join us at CHOWDHURY OF A GROUP and be part of a team that values innovation, dedication, and growth.</p>
+        <!-- Add more sections here -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 CHOWDHURY OF A GROUP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Slide-in Menu -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const slideMenu = document.getElementById('slide-menu');
+
+        menuToggle.addEventListener('click', () => {
+            slideMenu.classList.toggle('-translate-x-full');
+        });
+    </script>
+</body>
+</html>

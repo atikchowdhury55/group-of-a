@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOWDHURY OF A GROUP</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+        }
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .slide-menu {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #d4af37;
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .btn-primary {
+            background-color: #d4af37;
+            color: #1a1a1a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #b38f2a;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .separator-line {
+            border-top: 2px solid #d4af37;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+    <!-- Navigation Menu -->
+    <nav class="navbar fixed top-0 left-0 w-full z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="https://i.imgur.com/aoDQW6X.png" alt="Logo" class="h-12 w-auto">
+                <span class="text-xl font-bold text-gold-500 ml-2">CHOWDHURY OF A GROUP</span>
+            </div>
+            <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="text-gold-500 hover:text-gold-300">Home</a></li>
+                <li><a href="#board" class="text-gold-500 hover:text-gold-300">Board of Directors</a></li>
+                <li><a href="#services" class="text-gold-500 hover:text-gold-300">Services</a></li>
+                <li><a href="#careers" class="text-gold-500 hover:text-gold-300">Careers</a></li>
+                <li><a href="#contact" class="text-gold-500 hover:text-gold-300">Contact</a></li>
+                <li><a href="#privacy" class="text-gold-500 hover:text-gold-300">Privacy Policy</a></li>
+                <li><a href="#terms" class="text-gold-500 hover:text-gold-300">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Slide-in Menu -->
+    <div id="slide-menu" class="slide-menu fixed inset-y-0 left-0 w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class="p-6">
+          <ul class="space-y-4">
+        <li><a href="index.html" class="block text-white hover:bg-gray-700 p-2 rounded">Home</a></li>
+        <li><a href="bordmembers.html" class="block text-white hover:bg-gray-700 p-2 rounded">Board of Directors</a></li>
+        <li><a href="service.html" class="block text-white hover:bg-gray-700 p-2 rounded">Services</a></li>
+        <li><a href="carearbost.html" class="block text-white hover:bg-gray-700 p-2 rounded">Careers</a></li>
+     
+            <li><a href="buying.html" class="block text-white hover:bg-gray-700 p-2 rounded">Buying</a></li>
+     
+           <li><a href="Selling.html" class="block text-white hover:bg-gray-700 p-2 rounded">Selling</a></li>
+              <li><a href="contact.html" class="block text-white hover:bg-gray-700 p-2 rounded">contact Us</a></li>
+                   <li><a href="privacy.html" class="block text-white hover:bg-gray-700 p-2 rounded">Privacy & Policy</a></li>
+        <li><a href="condition.html" class="block text-white hover:bg-gray-700 p-2 rounded">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-20 p-6">
+        <!-- Home Section -->
+        <section id="home" class="mb-12">
+            <h1 class="text-4xl font-bold text-gold-500 mb-4">Welcome to CHOWDHURY OF A GROUP</h1>
+            <p class="text-gray-300">Your trusted partner in business and innovation.</p>
+        </section>
+
+        <!-- Terms & Conditions Section -->
+        <section id="terms" class="mb-12">
+            <h2 class="text-3xl font-bold text-gold-500 mb-6 section-title">Terms & Conditions</h2>
+            <div class="text-gray-300 space-y-4">
+                <p>By accessing or using the website of CHOWDHURY OF A GROUP, you agree to be bound by the following terms and conditions. Please read these terms carefully before using our services or website. If you do not agree with these terms, please refrain from using our website.</p>
+
+                <h3 class="text-xl font-bold text-gold-500">1. Use of Website</h3>
+                <p>You agree to use this website for lawful purposes only and in accordance with the terms and conditions.</p>
+                <p>You are responsible for ensuring that all information you provide on the website is accurate, complete, and current.</p>
+                <p>We reserve the right to restrict access to certain parts of the website at any time, without notice.</p>
+
+                <h3 class="text-xl font-bold text-gold-500">2. Products and Services</h3>
+                <p>All products and services available on our website are subject to availability and may change at any time without prior notice.</p>
+                <p>We make every effort to ensure that the information on our website is accurate, but we do not guarantee that the product descriptions, prices, or other content are error-free.</p>
+                <p>CHOWDHURY OF A GROUP reserves the right to reject or cancel any order placed by a customer at its sole discretion.</p>
+
+                <h3 class="text-xl font-bold text-gold-500">3. Payment and Pricing</h3>
+                <p>The prices for products and services listed on our website are subject to change without notice.</p>
+                <p>All payments for products or services must be made in full, and the payment methods will be clearly outlined at the time of purchase.</p>
+                <p>If there is any discrepancy or issue with billing, please contact us at <a href="mailto:wiliyamzikson@gmail.com" class="text-gold-500 hover:underline">wiliyamzikson@gmail.com</a> immediately.</p>
+
+                <h3 class="text-xl font-bold text-gold-500">4. Intellectual Property</h3>
+                <p>All content, images, graphics, and trademarks on this website are the property of CHOWDHURY OF A GROUP or its licensors and are protected by copyright, trademark, and other intellectual property laws.</p>
+                <p>You are granted a limited, non-exclusive, and non-transferable license to access and use our website for personal, non-commercial purposes.</p>
+
+                <h3 class="text-xl font-bold text-gold-500">5. Privacy and Data Protection</h3>
+                <p>Your use of our website is governed by our Privacy Policy, which outlines how we collect, use, and protect your personal information.</p>
+                <p>By using our website, you consent to the collection and use of your data in accordance with our Privacy Policy.</p>
+
+                <h3 class="text-xl font-bold text-gold-500">6. Limitations of Liability</h3>
+                <p>CHOWDHURY OF A GROUP shall not be liable for any indirect, incidental, special, or consequential damages arising out of your use or inability to use the website or products.</p>
+                <p>We are not responsible for any damages or losses caused by viruses, hacking, or other malicious software that may infect your device due to your use of our website.</p>
+
+                <h3 class="text-xl font-bold text-gold-500">7. Third-Party Links</h3>
+                <p>Our website may contain links to third-party websites that are not controlled or operated by us. We are not responsible for the content or privacy practices of these external sites.</p>
+                <p>You access third-party websites at your own risk.</p>
+
+                <h3 class="text-xl font-bold text-gold-500">8. Termination</h3>
+                <p>We reserve the right to suspend or terminate your access to the website or any of our services at our sole discretion, without notice, for any reason, including if we believe you have violated these Terms and Conditions.</p>
+
+                <h3 class="text-xl font-bold text-gold-500">9. Governing Law</h3>
+                <p>These Terms and Conditions are governed by and construed in accordance with the laws of Bangladesh, without regard to its conflict of law principles.</p>
+                <p>Any disputes arising out of these Terms and Conditions shall be resolved in the courts of Dhaka, Bangladesh.</p>
+
+                <h3 class="text-xl font-bold text-gold-500">10. Changes to Terms & Conditions</h3>
+                <p>We reserve the right to modify or update these Terms and Conditions at any time. Any changes will be posted on this page with an updated revision date.</p>
+                <p>By continuing to use our website after any changes are made, you agree to the updated Terms and Conditions.</p>
+
+                <h3 class="text-xl font-bold text-gold-500">11. Contact Us</h3>
+                <p>If you have any questions or concerns regarding these Terms and Conditions, please contact us at:</p>
+                <p class="font-bold">CHOWDHURY OF A GROUP</p>
+                <p>Email: <a href="mailto:wiliyamzikson@gmail.com" class="text-gold-500 hover:underline">wiliyamzikson@gmail.com</a></p>
+                <p>Phone: <a href="tel:+11234567890" class="text-gold-500 hover:underline">+1 (123) 456-7890</a></p>
+                <p>Address: Gulshan-2, Dhaka, Bangladesh</p>
+
+                <div class="separator-line"></div>
+
+                <p class="font-bold text-center">Chairman</p>
+                <p class="text-center">Dr. ATIK CHOWDHURY</p>
+
+                <div class="separator-line"></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 CHOWDHURY OF A GROUP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Slide-in Menu -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const slideMenu = document.getElementById('slide-menu');
+
+        menuToggle.addEventListener('click', () => {
+            slideMenu.classList.toggle('-translate-x-full');
+        });
+    </script>
+</body>
+</html>
