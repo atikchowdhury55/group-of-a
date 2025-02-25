@@ -129,7 +129,12 @@
       <p class="mt-2">Dr. ATIK CHOWDHURY</p>
     </section>
   </div>
-
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 CHOWDHURY OF A GROUP. All rights reserved.</p>
+        </div>
+    </footer>
   <!-- JavaScript -->
   <script>
     // Toggle Menu Function
@@ -243,6 +248,32 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+   .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .slide-menu {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.9);
   </style>
 </body>
 </html>

@@ -8,6 +8,25 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
     body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -196,6 +215,12 @@
             </div>
         </section>
     </div>
+   </section>
+    </div>
+    <footer>
+    <p>&copy; 2023 CHOWDHURY OF A GROUP. All rights reserved.</p>
+    
+</footer>
 
     <script>
         // Function to toggle the slide menu

@@ -267,12 +267,7 @@
 
     <p class="mt-3 text-lg" style="font-family: 'Lora', serif;">At Chowdhury of A group, we believe success is defined by the positive changes we make not just in business, but in the world. Join us on our mission to build a brighter, more sustainable future for all.</p>
 
-    <!-- Footer Section -->
-  <footer>
-    <div class="container">
-        <p style="font-family: 'Lora', serif;">&copy; 2023 CHOWDHURY OF A GROUP. All rights reserved</p>
-    </div>
-</footer>
+
 
     <hr class="my-4">
         <h3 class="font-bold">🇧🇩</h3>
@@ -281,7 +276,32 @@
 
     <hr class="my-4">
   </div>
+      <!-- Footer Section -->
+  <footer>
+    <div class="container">
+        <p style="font-family: 'Lora', serif;">&copy; 2023 CHOWDHURY OF A GROUP. All rights reserved</p>
+    </div>
+</footer>
 <style>
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
 footer {
     background-color: #2c3e50;
     color: white;
@@ -376,6 +396,19 @@ footer p {
   .slide-menu a:hover {
     background-color: rgba(0, 0, 0, 0.9);
   }
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 </style>
 
 <script>
@@ -416,5 +449,10 @@ window.addEventListener('scroll', function() {
     });
 });
 </script>
+<style>
+  .slide-menu a {
+    font-family: 'Lora', serif; /* এখানে ফন্ট সেট করা হলো */
+  }
+</style>
 </body>
 </html>

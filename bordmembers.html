@@ -1,98 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHOWDHURY OF A GROUP</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Menu Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Lora', serif;;
-            margin: 0;
-            padding: 0;
-            background-color: #E5E4E2; /* Pewter color */
-            color: #333;
+        /* Slide Menu Styles */
+        .slide-menu {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.9);
+            transform: translateX(-100%);
+            transition: transform 0.3s ease-in-out;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        .slide-menu.open {
+            transform: translateX(0);
         }
-        header {
-            text-align: center;
-            padding: 20px 0;
-        }
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        header img {
-            width: 50px;
-            vertical-align: middle;
-        }
-  
-    
-        
-
-        .card {
-            background-color: #8C92AC; /* Cool grey */
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .card h2 {
-            margin-top: 0;
-        }
-        .card p {
-            margin: 5px 0;
-        }
-        .card p strong {
-            font-weight: bold;
+           .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.4);
         }
     </style>
 </head>
 <body>
     <!-- Navigation Menu -->
-  <nav class="navbar fixed top-0 left-0 w-full z-50 shadow-md">
-    <div class="container mx-auto flex justify-between items-center p-4">
-      <div class="flex items-center">
-        <img src="https://i.imgur.com/aoDQW6X.png" alt="Logo" class="h-12 w-auto">
-        <span class="text-xl font-bold text-gray-800 ml-2">CHOWDHURY OF A GROUP</span>
-      </div>
-      <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-200" onclick="toggleMenu()">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-      <ul class="hidden md:flex space-x-6">
-        <li><a href="#home" class="text-gray-800 hover:text-blue-500">Home</a></li>
-        <li><a href="#board" class="text-gray-800 hover:text-blue-500">Board of Directors</a></li>
-        <li><a href="#services" class="text-gray-800 hover:text-blue-500">Services</a></li>
-        <li><a href="#careers" class="text-gray-800 hover:text-blue-500">Careers</a></li>
-        <li><a href="#contact" class="text-gray-800 hover:text-blue-500">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+    <nav class="navbar fixed top-0 left-0 w-full z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="flex items-center">
+                <img src="https://i.imgur.com/aoDQW6X.png" alt="Logo" class="h-12 w-auto">
+                <span class="text-xl font-bold text-gray-800 ml-2">CHOWDHURY OF A GROUP</span>
+            </div>
+            <button id="menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-gray-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
 
-  <!-- Slide-in Menu -->
-  <div id="slide-menu" class="slide-menu fixed inset-y-0 left-0 w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
-    <div class="p-6">
-      <button class="absolute top-0 right-0 p-4 text-white" onclick="toggleMenu()"></button>
-    <ul class="space-y-4">
-        <li><a href="index.html" class="block text-white hover:bg-gray-700 p-2 rounded">Home</a></li>
-        <li><a href="bordmembers.html" class="block text-white hover:bg-gray-700 p-2 rounded">Board of Directors</a></li>
-        <li><a href="service.html" class="block text-white hover:bg-gray-700 p-2 rounded">Services</a></li>
-        <li><a href="carearbost.html" class="block text-white hover:bg-gray-700 p-2 rounded">Careers</a></li>
-     
-            <li><a href="buying.html" class="block text-white hover:bg-gray-700 p-2 rounded">Buying</a></li>
-     
-           <li><a href="Selling.html" class="block text-white hover:bg-gray-700 p-2 rounded">Selling</a></li>
-              <li><a href="contact.html" class="block text-white hover:bg-gray-700 p-2 rounded">contact Us</a></li>
-                   <li><a href="privacy.html" class="block text-white hover:bg-gray-700 p-2 rounded">Privacy & Policy</a></li>
-        <li><a href="condition.html" class="block text-white hover:bg-gray-700 p-2 rounded">Terms & Conditions</a></li>
-      </ul>
+    <!-- Slide-in Menu -->
+    <div id="slide-menu" class="slide-menu fixed inset-y-0 left-0 w-64 transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+        <div class="p-6">
+            <ul class="space-y-4">
+                <li><a href="index.html" class="block text-white hover:bg-gray-700 p-2 rounded">Home</a></li>
+                <li><a href="bordmembers.html" class="block text-white hover:bg-gray-700 p-2 rounded">Board of Directors</a></li>
+                <li><a href="service.html" class="block text-white hover:bg-gray-700 p-2 rounded">Services</a></li>
+                <li><a href="carearbost.html" class="block text-white hover:bg-gray-700 p-2 rounded">Careers</a></li>
+                <li><a href="buying.html" class="block text-white hover:bg-gray-700 p-2 rounded">Buying</a></li>
+                <li><a href="Selling.html" class="block text-white hover:bg-gray-700 p-2 rounded">Selling</a></li>
+                <li><a href="contact.html" class="block text-white hover:bg-gray-700 p-2 rounded">Contact Us</a></li>
+                <li><a href="privacy.html" class="block text-white hover:bg-gray-700 p-2 rounded">Privacy & Policy</a></li>
+                <li><a href="condition.html" class="block text-white hover:bg-gray-700 p-2 rounded">Terms & Conditions</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
+
     <div class="container">
         <header>
             <h1 class="text-3xl font-bold inline-block px-4 py-2" style="color: #333; font-size: 36px; font-family: 'Lora', serif; text-align: center; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"> <img src="https://i.imgur.com/aoDQW6X.png" alt="Company Logo" style="width: 100px; height: auto; display: block; margin: auto;" alt="Company Logo">CHOWDHURY OF A GROUP</h1>
@@ -105,7 +73,7 @@
     <p style="color: #4B4F54; font-family: 'Lora', serif; font-size: 0.8em;">1. Bachelor's Degree in Business Administration, Economics</p>
     <p style="color: #4B4F54; font-family: 'Lora', serif; font-size: 0.8em;">2. Master's Degree (MBA) in Business Administration, Management</p>
     <p style="color: #4B4F54; font-family: 'Lora', serif; font-size: 0.8em;">3. Ph.D. in Management</p>
-    <h1>Awards and Recognition of Dr. Atik Chowdhury</h1>
+    <h1><strong>Awards and Recognition of Dr. Atik Chowdhury</strong></h1>
     <p><em>"A Visionary Leader, Transforming the Future"</em></p>
 
     <h2>1.🎖️Best CEO Award️</h2>
@@ -285,7 +253,7 @@
     <p><strong>Specialized Certifications:</strong></p>
     <p style="color: #4B4F54; font-family: 'Lora', serif; font-size: 0.8em;">- SHRM-SCP (Society for Human Resource Management - Senior Certified Professional)</p>
     <p style="color: #4B4F54; font-family: 'Lora', serif; font-size: 0.8em;">- PHR/SPHR (Professional in Human Resources / Senior Professional in Human Resources)</p>
-    <p style="color: #4B4F54; font-family: 'Lora', serif; font-size: 0.8em;">- CIPD (Chartered Institute of Personnel and Development) Certification</p>
+   <p style="color: #4B4F54; font-family: 'Lora', serif; font-size: 0.8em;">- CIPD (Chartered Institute of Personnel and Development) Certification</p>
     <p style="color: #4B4F54; font-family: 'Lora', serif; font-size: 0.8em;">- Certified Talent Management Practitioner (CTMP)</p>
     <p style="color: #4B4F54; font-family: 'Lora', serif; font-size: 0.8em;">4. Ph.D. in Organizational Psychology, Human Resources</p>
 </div>
@@ -673,250 +641,226 @@
     <p>&copy; 2023 CHOWDHURY OF A GROUP. All rights reserved.</p>
     
 </footer>
+
     <script>
-        function toggleNav() {
-            var nav = document.getElementById("nav");
-            nav.classList.toggle("open");
+        // Function to toggle the slide menu
+        function toggleMenu() {
+            const slideMenu = document.getElementById('slide-menu');
+            slideMenu.classList.toggle('open');
         }
-    </script>
-    
-    <style>
-      /* General Styles */
-body {
-    font-family: 'Lora', serif;
-    margin: 0;
-    padding: 0;
-    background-color: #E5E4E2; /* Pewter color */
-    color: #333;
-    line-height: 1.6;
-}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
+        // Add event listener to the menu-toggle button
+        document.getElementById('menu-toggle').addEventListener('click', toggleMenu);
+        
+        function toggleMenu() {
+    const slideMenu = document.getElementById('slide-menu');
+    const body = document.body;
 
-header {
-    text-align: center;
-    padding: 20px 0;
-}
+    slideMenu.classList.toggle('open');
 
-header h1 {
-    font-size: 3em;
-    margin: 0;
-    color: #333;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-header img {
-    width: 100px;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-
-/* Card Styles */
-.card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px r
-.card h2 {
-    margin-top: 0;
-    color: #fff;
-}
-
-.card p {
-    margin: 5px 0;
-    color: #fff;
-}
-
-.card p strong {
-    font-weight: bold;
-}
-
-/* Gradient Background */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(229, 228, 226, 0.9), rgba(140, 146, 172, 0.9));
-    z-index: -1;
-}
-
-/* Parallax Scrolling Effect */
-.parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    .card {
-        padding: 15px;
-    }
-
-    
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    .card {
-        padding: 10px;
+    if (slideMenu.classList.contains('open')) {
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.overflow = 'auto';
     }
 }
-    /* Card hover effect */
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Button hover effect */
-.button {
-    background-color: #8C92AC;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.
-  .parallax {
-    background-image: url('your-image.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-}    
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-    margin-top: 20px;
-}
-
-footer a {
-    color: #8C92AC;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-    </style>
-    <script>
-      
-
-// Parallax Scrolling Effect
-window.addEventListener("scroll", function () {
-    const parallax = document.querySelector(".parallax");
-    let scrollPosition = window.pageYOffset;
-
-    parallax.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
-});
-
-// Smooth Scrolling for Anchor Links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-        });
-    });
-});
-
-  // Toggle Menu Function
-    function toggleMenu() {
-      const slideMenu = document.getElementById('slide-menu');
-      slideMenu.classList.toggle('open');
-    }
-
-    // Close Menu on Click Outside
-    document.addEventListener('click', (event) => {
-      const slideMenu = document.getElementById('slide-menu');
-      const menuToggle = document.getElementById('menu-toggle');
-      if (!slideMenu.contains(event.target) && !menuToggle.contains(event.target)) {
-        slideMenu.classList.remove('open');
-      }
-    });
-    // Toggle Menu Function
-function toggleMenu() {
-  const slideMenu = document.getElementById('slide-menu');
-  slideMenu.classList.toggle('open');
-}
-
-// Close Menu on Click Outside
-document.addEventListener('click', (event) => {
-  const slideMenu = document.getElementById('slide-menu');
-  const menuToggle = document.getElementById('menu-toggle');
-  if (!slideMenu.contains(event.target) && !menuToggle.contains(event.target)) {
-    slideMenu.classList.remove('open');
-  }
-});
-
+document.getElementById('menu-toggle').addEventListener('click', toggleMenu);
     </script>
     <style>
-         
-    .slide-menu {
-      transform: translateX(-100%);
-      transition: transform 0.3s ease-in-out;
-      backdrop-filter: blur(10px);
-      background-color: rgba(0, 0, 0, 0.9);
+    /* General Styles */
+    body {
+        font-family: 'Lora', serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
     }
-    .slide-menu.open {
-      transform: translateX(0);
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
     }
-    
+
+    header h1 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin-bottom: 40px;
+    }
+
+    /* Card Layout Styles */
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: #555;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .card ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .card ul li {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #666;
+    }
+
+    .card strong {
+        color: #333;
+    }
+
+    /* Footer Styles */
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 28px;
+        }
+
+        .card h2 {
+            font-size: 20px;
+        }
+
+        .card h3 {
+            font-size: 16px;
+        }
+
+        .card p, .card ul li {
+            font-size: 12px;
+        }
+    }
+    /* Slide Menu Styles */
 .slide-menu {
-  transform: translateX(-100%);
-  transition: transform 0.3s ease-in-out;
-  backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
 .slide-menu.open {
-  transform: translateX(0);
+    transform: translateX(0);
 }
+
+.slide-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-menu ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.slide-menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 25px;
+}
+
 .navbar {
-  background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
 }
 
-.navbar a {
-  transition: color 0.3s ease;
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-.navbar a:hover {
-  color: #3B82F6; /* Blue color */
+.navbar button {
+    transition: background-color 0.3s ease;
 }
-    </style>
-    
+
+.navbar button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+</style>
 </body>
 </html>
